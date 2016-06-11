@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+  root to: "splash#index"
+
   resources :recipes
 
-  root "recipes#index"
+  get "/recipes",                 to: "recipes#index",        as: "recipes_index"
 
 end
