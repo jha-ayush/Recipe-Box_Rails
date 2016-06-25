@@ -1,6 +1,6 @@
 
 # Rails Recipe-Box
-https://fierce-peak-55134.herokuapp.com/ | https://git.heroku.com/fierce-peak-55134.git
+https://bluelemur-recipes.herokuapp.com/ | https://git.heroku.com/bluelemur-recipes.git
 
 
 # ruby-getting-started
