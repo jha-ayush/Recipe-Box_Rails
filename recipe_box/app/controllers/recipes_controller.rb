@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
 
     if @recipe.save
-      redirect_to @recipe, notice: "New Recipe created!"
+      redirect_to @recipe, notice: "New Recipe CREATED!"
     else
       render "new"
     end
@@ -36,7 +36,7 @@ class RecipesController < ApplicationController
 
   def destroy
     @recipe.destroy
-    redirect_to root_path, notice: "Successfully DELETED recipe"
+    redirect_to root_path, notice: "DELETED recipe successfully!"
   end
 
 
