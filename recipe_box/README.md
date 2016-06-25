@@ -26,3 +26,19 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+# Recipe-Box_Rails
+
+
+A user-friendly recipe-box app (**Recipe Box**), using Rails that has the following
+models - Recipe, Ingredient, Directions.
+
+![Alt text](http://savvycomsoftware.com/wp-content/uploads/2013/09/RubyOnRails1.png)
+
+**Technologies used**
+- Ruby on Rails
+- HAML, simple_form
+- Bootstrap theme
+
+https://sheltered-harbor-32103.herokuapp.com/ | https://git.heroku.com/sheltered-harbor-32103.git
