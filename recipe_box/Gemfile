@@ -9,6 +9,8 @@ gem 'friendly_id', '~> 5.1'
 gem 'pry-awesome_print', '~> 9.6', '>= 9.6.10'
 gem 'bundler', '~> 1.12', '>= 1.12.5'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 
 

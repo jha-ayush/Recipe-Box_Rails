@@ -1,6 +1,15 @@
-%h1= @recipe.title
-%p= @recipe.description
+.main_content
+	#recipe_top.row
+		.col-md-4
+			= image_tag @recipe.image.url(:medium), class: "recipe_image"
+		.col-md-8
+			#recipe_info
+				%h1= @recipe.title
+				%p= @recipe.description
+			%hr/	
 
-= link_to "BACK", root_path, class: "btn btn-default"
-= link_to "EDIT", edit_recipe_path, class: "btn btn-warning"
-= link_to "DELETE", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"
+	.row
+		.col-md-12
+			= link_to "BACK", root_path, class: "btn btn-default"
+			= link_to "EDIT", edit_recipe_path, class: "btn btn-warning"
+			= link_to "DELETE", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"

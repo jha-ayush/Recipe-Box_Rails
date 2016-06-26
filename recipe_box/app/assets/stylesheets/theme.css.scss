@@ -2,7 +2,8 @@ $brand-primary: #532F8C;
 $brand-language: #B01302;
 
 .jumbotron {
-  background-color: tomato;
+  background-color: firebrick;
+  // background-image: url("assets/images/background.jpg");
   color: white;
   padding-bottom: 80px;
 
@@ -37,5 +38,16 @@ $brand-language: #B01302;
       max-width: 100%;
     }
   }
-
+}
+.main_content{
+  text-align: center;
+}
+.recipe_image{
+  border-radius: 50%;
+}
+.recipe{
+  text-align: center;
+}
+.image_wrapper{
+  padding: 5px;
 }
