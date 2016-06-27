@@ -37,7 +37,7 @@
   }
 
   .navbar {
-  	margin-bottom: 21px;
+  	margin-bottom: 2px;
     text-transform: uppercase;
   }
   	.navbar-brand {
@@ -87,6 +87,8 @@
 
   #recipe_top {
   	margin-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 60px;
   }
 
   #recipe_info, #ingredients, #directions {
@@ -101,6 +103,7 @@
 
   .recipe_image {
   	max-width: 100%;
+    margin-left: 20px;
   	border-radius: 5px;
     -webkit-box-shadow:  4px 4px 2px slategray;
   	-moz-box-shadow:  4px 4px 2px slategray;
