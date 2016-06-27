@@ -5,7 +5,9 @@ $brand-language: #B01302;
   background-color: firebrick;
   // background-image: url('../images/background.jpg');
   color: white;
-  // padding-bottom: 80px;
+  padding-top: 140px;
+  padding-bottom: 200px;
+  margin-bottom: 60px;
 
   .btn-primary {
     background: lighten($brand-primary, 20%);
