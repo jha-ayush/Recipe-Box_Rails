@@ -14,6 +14,14 @@
  *= require_self
  */
 
+
+
+ @mixin box-shadow {
+   -webkit-box-shadow:  4px 4px 2px slategray;
+   -moz-box-shadow:  4px 4px 2px slategray;
+   box-shadow:  4px 4px 2px slategray;
+ }
+
   $red: #DB6161;
 
   body {
@@ -29,9 +37,7 @@
   	margin-bottom: 20px;
   	border: 1px solid transparent;
   	border-radius: 5px;
-    -webkit-box-shadow:  4px 4px 2px slategray;
-  	-moz-box-shadow:  4px 4px 2px slategray;
-  	box-shadow:  4px 4px 2px slategray;
+    @include box-shadow;
   	background: white;
   	font-weight: bold;
   }
@@ -40,12 +46,12 @@
   	margin-bottom: 2px;
     text-transform: uppercase;
   }
-  	.navbar-brand {
-  		text-transform: uppercase;
-  		letter-spacing: -1px;
-  		font-weight: bold;
-  		font-size: 25px;
-  	}
+  .navbar-brand {
+  	text-transform: uppercase;
+  	letter-spacing: -1px;
+  	font-weight: bold;
+  	font-size: 25px;
+  }
 
   .recipe {
   	background: white;
@@ -53,10 +59,8 @@
   	margin-bottom: 50px;
     margin-left: 15px;
     margin-right: 15px;
-    -webkit-box-shadow:  4px 4px 2px slategray;
-  	-moz-box-shadow:  4px 4px 2px slategray;
-  	box-shadow:  4px 4px 2px slategray;
-  	}
+    @include box-shadow;
+  }
     .recipe > .image_wrapper {
   		max-width: 100%;
   		border-radius: 5px 5px 0 0;
@@ -73,7 +77,6 @@
   		img:hover {
   			transform: scale(1.075);
   		}
-  	}
   	h2 {
   		padding: 15px 5%;
   		margin: 0;
@@ -81,9 +84,9 @@
   		font-weight: normal;
   		line-height: 1.5;
     }
-  		h2 > a {
-  			color: $red;
-  		}
+  	h2 > a {
+  		color: $red;
+  	}
 
   #recipe_top {
   	margin-bottom: 50px;
@@ -93,9 +96,7 @@
 
   #recipe_info, #ingredients, #directions {
   	background: white;
-    -webkit-box-shadow:  4px 4px 2px slategray;
-  	-moz-box-shadow:  4px 4px 2px slategray;
-  	box-shadow:  4px 4px 2px slategray;
+    @include box-shadow;
   	min-height: 360px;
   	border-radius: 5px;
   	padding: 2em 8%;
@@ -105,12 +106,11 @@
   	max-width: 100%;
     margin-left: 20px;
   	border-radius: 5px;
-    -webkit-box-shadow:  4px 4px 2px slategray;
-  	-moz-box-shadow:  4px 4px 2px slategray;
-  	box-shadow:  4px 4px 2px slategray;
+    @include box-shadow;
   }
 
   #recipe_info {
+    margin-left: 20px;
   	h1 {
   		font-size: 36px;
   		font-weight: normal;
