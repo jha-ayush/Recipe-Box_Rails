@@ -25,7 +25,7 @@
   $red: #DB6161;
 
   body {
-  	background: rgb(235, 238, 243);
+  	background: bisque;
   }
 
   .main_content {
@@ -83,6 +83,7 @@
   		font-size: 20px;
   		font-weight: normal;
   		line-height: 1.5;
+      color: darkcyan;
     }
   	h2 > a {
   		color: $red;
@@ -123,7 +124,14 @@
   }
 
   #ingredients, #directions {
-  	margin-bottom: 50px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    h2{
+      font: 25px;
+      font-weight: bolder;
+    }
   	ul, ol {
   		padding-left: 18px;
   		li {

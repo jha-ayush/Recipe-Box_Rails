@@ -5,12 +5,25 @@
 		.col-md-8
 			#recipe_info
 				%h1= @recipe.title
-				%p= @recipe.description
-			%br/
-			%br/
+				%p.description= @recipe.description
 
 	.row
-		.col-md-4
+		.col-md-6
+			#ingredients
+				%h2 Ingredients
+				%ul
+					- @recipe.ingredients.each do |ingredient|
+						%li= ingredient.name
+
+		.col-md-6
+			#directions
+				%h2 Directions
+				%ul
+					- @recipe.directions.each do |direction|
+						%li= direction.step
+
+	.row
+		.col-md-12
 			= link_to "BACK", root_path, class: "btn btn-default"
 			= link_to "EDIT", edit_recipe_path, class: "btn btn-warning"
 			= link_to "DELETE", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"
