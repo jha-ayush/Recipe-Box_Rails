@@ -3,9 +3,9 @@ $brand-language: #B01302;
 
 .jumbotron {
   background-color: firebrick;
-  // background-image: url("assets/images/background.jpg");
+  // background-image: url('../images/background.jpg');
   color: white;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 
   .btn-primary {
     background: lighten($brand-primary, 20%);
@@ -13,6 +13,13 @@ $brand-language: #B01302;
     &:hover {
       background: lighten($brand-primary, 15%);
     }
+  }
+  h2{
+    color: inherit;
+  }
+  h4{
+    color: lighten($brand-primary, 60%);
+    font-family: cursive;
   }
 
   p {
