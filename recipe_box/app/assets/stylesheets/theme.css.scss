@@ -15,7 +15,8 @@ $brand-language: #B01302;
     }
   }
   h2{
-    color: inherit;
+    color: lighten($brand-primary, 60%);
+    font-family: cursive;
   }
   h4{
     color: lighten($brand-primary, 60%);
