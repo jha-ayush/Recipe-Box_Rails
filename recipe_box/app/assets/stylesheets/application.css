@@ -14,12 +14,8 @@
  *= require_self
  */
 
-
-  @mixin box-shadow {
-  	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-  	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-  	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-  }
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
   $red: #DB6161;
 
@@ -36,43 +32,45 @@
   	margin-bottom: 20px;
   	border: 1px solid transparent;
   	border-radius: 5px;
-  	@include box-shadow;
+    -webkit-box-shadow:  4px 4px 2px slategray;
+  	-moz-box-shadow:  4px 4px 2px slategray;
+  	box-shadow:  4px 4px 2px slategray;
   	background: white;
   	font-weight: bold;
   }
 
   .navbar {
   	margin-bottom: 21px;
-  	@include box-shadow;
-  	border: none;
+    text-transform: uppercase;
+  }
   	.navbar-brand {
   		text-transform: uppercase;
   		letter-spacing: -1px;
   		font-weight: bold;
   		font-size: 25px;
-  		a {
-  			color: $red;
-  		}
   	}
-  }
 
   .recipe {
   	background: white;
   	border-radius: 5px;
   	margin-bottom: 40px;
-  	@include box-shadow;
-  	.image_wrapper {
+    -webkit-box-shadow:  4px 4px 2px slategray;
+  	-moz-box-shadow:  4px 4px 2px slategray;
+  	box-shadow:  4px 4px 2px slategray;
+  	}
+    .recipe > .image_wrapper {
   		max-width: 100%;
   		border-radius: 5px 5px 0 0;
   		overflow: hidden;
-  	}
+    }
   	img {
   		width: 100%;
   		-webkit-transition: all .3s ease-out;
   	  -moz-transition: all .3s ease-out;
   	  -o-transition: all .3s ease-out;
       transition: all .3s ease-out;
-  		&:hover {
+    }
+  		img:hover {
   			transform: scale(1.075);
   		}
   	}
@@ -82,7 +80,8 @@
   		font-size: 20px;
   		font-weight: normal;
   		line-height: 1.5;
-  		a {
+    }
+  		h2 > a {
   			color: $red;
   		}
   	}
@@ -94,7 +93,9 @@
 
   #recipe_info, #ingredients, #directions {
   	background: white;
-  	@include box-shadow;
+    -webkit-box-shadow:  4px 4px 2px slategray;
+  	-moz-box-shadow:  4px 4px 2px slategray;
+  	box-shadow:  4px 4px 2px slategray;
   	min-height: 360px;
   	border-radius: 5px;
   	padding: 2em 8%;
@@ -103,7 +104,9 @@
   .recipe_image {
   	max-width: 100%;
   	border-radius: 5px;
-  	@include box-shadow;
+    -webkit-box-shadow:  4px 4px 2px slategray;
+  	-moz-box-shadow:  4px 4px 2px slategray;
+  	box-shadow:  4px 4px 2px slategray;
   }
 
   #recipe_info {
