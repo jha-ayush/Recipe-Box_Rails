@@ -12,7 +12,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <ul class="nav navbar-nav">
         <li class="active">
@@ -22,17 +22,17 @@
 			 <% if user_signed_in? %>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="navbar-right">
-	          <a href="/recipes/new"><span class="glyphicon glyphicon-flash"></span> Create Recipe</a>
+	          <a href="/recipes/new"> Create Recipe</a>
 	        </li>
           <li class="navbar-right">
-	          <a href="/users/sign_out"><span class="glyphicon glyphicon-remove"></span> Sign-Out</a>
+	          <a href="/users/sign_out"> Sign-Out</a>
 	        </li>
         <% else %>
 	        <li class="navbar-right">
-	          <a href="/users/sign_up"><span class="glyphicon glyphicon-fire"></span> Sign-Up</a>
+	          <a href="/users/sign_up">Sign-Up</a>
 	        </li>
           <li class="navbar-right">
-	          <a href="/users/sign_in"><span class="glyphicon glyphicon-fire"></span> Log-In</a>
+	          <a href="/users/sign_in">Log-In</a>
 	        </li>
 	      </ul>
 				<% end %>

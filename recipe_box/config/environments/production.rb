@@ -77,5 +77,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #Needed for devise for heroku deployment
-  config.action_mailer.default_url_options = { host: 'https://heroku.com/' }
+  config.action_mailer.default_url_options = { :host => 'https://bluelemur-recipes.herokuapp.com/' }
 end
