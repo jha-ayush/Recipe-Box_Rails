@@ -9,5 +9,5 @@ models - Recipe, Ingredient, Directions.
 
 **Technologies used**
 - Ruby on Rails
-- HAML, simple_form
+- Ruby Gems
 - Bootstrap theme
