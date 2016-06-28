@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -30,6 +31,13 @@
   .main_content {
   	padding: 0 0 50px 0;
   }
+  .navbar.navbar-left.navbar-brand > a{
+    color: tomato;
+    padding: 20px;
+  }
+  .navbar.navbar-left.navbar-brand > a:hover{
+    color: blueviolet;
+  }
 
   .alert {
   	padding: 200px;
@@ -50,9 +58,6 @@
   	letter-spacing: -1px;
   	font-weight: bold;
   	font-size: 25px;
-  }
-  .navbar.navbar-left.navbar-brand{
-    margin-left: 15px;
   }
 
   .recipe {
