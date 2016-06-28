@@ -15,9 +15,11 @@ $brand-language: #B01302;
       background: lighten($brand-primary, 15%);
     }
   }
-  h2{
+  h1{
     color: lighten($brand-primary, 60%);
     font-family: cursive;
+    font-weight: bolder;
+    padding-bottom: 30px;
   }
   h4{
     color: lighten($brand-primary, 60%);
