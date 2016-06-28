@@ -14,6 +14,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem "rails-erd"
+gem 'binding_of_caller', '~> 0.7.2'
 
 
 
